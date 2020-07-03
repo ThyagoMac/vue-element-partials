@@ -67,12 +67,12 @@
             <hr>
             <el-form-item label="URL">
                 <el-col :span="8">
-                    <el-input v-model="heroine.foto"></el-input>
+                    <el-input v-model="heroine.url"></el-input>
                 </el-col>
                     <div class="demo-image__preview">
                         <el-image 
                             style="width: 15%"
-                            :src="heroine.foto">
+                            :src="heroine.url">
                         </el-image>
                     </div>   
             </el-form-item>
@@ -102,7 +102,7 @@
           debuff: [],
           resource: '',
           desc: '',
-          foto: ''
+          url: ''
         }
       }
     },
