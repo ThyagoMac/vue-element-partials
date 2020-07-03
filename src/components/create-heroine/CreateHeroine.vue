@@ -6,7 +6,7 @@
             <el-form-item label="Name">
                 <el-input v-model="heroine.name"></el-input>
             </el-form-item>
-            <el-form-item label="Experience" >
+            <el-form-item label="Heroine Tier" >
                 <el-select v-model="heroine.region" placeholder="Please Select The Tier" style="width: 100%">
                 <el-option label="T1" value="t1"></el-option>
                 <el-option label="T2" value="t2"></el-option>
@@ -65,6 +65,17 @@
                 </el-checkbox-group>
             </el-form-item>
             <hr>
+            <el-form-item label="URL">
+                <el-col :span="8">
+                    <el-input v-model="heroine.foto"></el-input>
+                </el-col>
+                    <div class="demo-image__preview">
+                        <el-image 
+                            style="width: 15%"
+                            :src="heroine.foto">
+                        </el-image>
+                    </div>   
+            </el-form-item>
             <el-form-item label="BIO">
                 <el-input type="textarea" v-model="heroine.desc"></el-input>
             </el-form-item>
@@ -91,6 +102,7 @@
           debuff: [],
           resource: '',
           desc: '',
+          foto: ''
         }
       }
     },
